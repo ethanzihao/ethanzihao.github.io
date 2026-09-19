@@ -1,7 +1,7 @@
 ---
 title: Change Mutable Data by Side Effects
 date: 2026-09-20 2:33:00 +0800
-category: Concept
+category: Notes
 tags: [CS61A, Python, Mutable Data, Frame]
 description: To tell the difference between rebinding a formal parameter and to mutate data by side effects.
 lang: en

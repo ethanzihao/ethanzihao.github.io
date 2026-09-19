@@ -20,7 +20,7 @@ This is my personal blog: a place to document what I learn about computer scienc
 I write to think more clearly, and share to start conversations.
 
 ## Contact
-E-mail: zihaotang1@link.cuhk.edu.cn
+E-mail: [zihaotang1@link.cuhk.edu.cn](zihaotang1@link.cuhk.edu.cn)
 
 GitHub: [Ethan Tang](https://github.com/ethanzihao)
 

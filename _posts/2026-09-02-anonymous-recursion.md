@@ -1,3 +1,12 @@
+---
+title: Anonymous Recursion
+date: 2026-09-02 12:00:00 +0800
+category: Solutions
+tags: [CS61A, Python, Recursion]
+description: How can recursion work without a function name? Exploring lambdas, self-application, and f(f) through a CS61A exercise.
+lang: en
+---
+
 ```python
 def make_anonymous_factorial():  
     """Return the value of an expression that computes factorial.  
@@ -22,4 +31,4 @@ This is a question about how to use recursion without calling the origin functio
 1. Q: Why `f(f)` ? `f` is a parameter, isn't it? 
 	1. A: `f` is a parameter when you define the function. But when you pass itself( a function)in, `f` has been already bound to a function, which is itself. 
 2. Q: Why `f(f)` ? We assume `f` plays the same role of the recursion function, isn't it? 
-	1. A: Function `f` is a lambda function. So whenever you call it, you should pass its parameter, which is itself. 
+	1. A: Function `f` is a lambda function. So whenever you call it, you should pass its parameter, which is itself.

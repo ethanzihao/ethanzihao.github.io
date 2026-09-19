@@ -1,0 +1,21 @@
+title: Ethan Tang
+description: Notes on computer science, problem solving, and everyday life. A record of thinking and discovery.
+url: https://ethanzihao.github.io
+baseurl: ""
+author: Ethan Tang
+lang: en
+timezone: Asia/Shanghai
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+permalink: /posts/:title/
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      category: Notes
+exclude: [README.md, Gemfile, Gemfile.lock, vendor, scripts, tests]

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="reading-layout">
+  <a class="back-link" href="{{ '/' | relative_url }}">← All posts</a>
+  <header class="article-header">
+    <div class="post-meta"><span class="category">{{ page.category | escape }}</span><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%Y.%m.%d' }}</time></div>
+    <h1>{{ page.title | escape }}</h1>
+    {% if page.description %}<p class="article-description">{{ page.description | escape }}</p>{% endif %}
+    <div class="tags">{% for tag in page.tags %}<span># {{ tag | escape }}</span>{% endfor %}</div>
+  </header>
+  <div class="prose">{{ content }}</div>
+  <div class="article-end"><span aria-hidden="true">✳</span><p>Thanks for reading.</p><a href="{{ '/archive/' | relative_url }}">Explore the archive →</a></div>
+  <nav class="post-navigation" aria-label="Adjacent posts">
+    {% if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>← Older post</span>{{ page.previous.title | escape }}</a>{% endif %}
+    {% if page.next %}<a href="{{ page.next.url | relative_url }}"><span>Newer post →</span>{{ page.next.title | escape }}</a>{% endif %}
+  </nav>
+</article>

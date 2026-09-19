@@ -1,22 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Ethan Tang</title>
-</head>
-
-<body>
-
-    <h1>Ethan Tang</h1>
-
-    <p>Computer Science Student</p>
-
-    <h2>Notes</h2>
-
-    <ul>
-        <li>CS61A</li>
-        <li>Algorithms</li>
-        <li>Mathematics</li>
-    </ul>
-
-</body>
-</html>
+---
+layout: default
+title: Home
+nav: home
+---
+<section class="intro">
+  <p class="eyebrow"><span class="status-dot"></span> ETHAN'S NOTEBOOK</p>
+  <h1>Thinking aloud.<br><span class="accent">Learning as I go.</span></h1>
+  <p class="intro-copy">I’m Ethan Tang, also known as Sherlock.<br>A home for my computer science notes, problem-solving ideas, and reflections on everyday life.</p>
+  <a class="text-link" href="{{ '/about/' | relative_url }}">About me <span aria-hidden="true">↗</span></a>
+  <span class="intro-decoration" aria-hidden="true">{ … }</span>
+</section>
+<section class="writing-section" aria-labelledby="writing-title">
+  <div class="section-heading"><h2 id="writing-title">Writing <span class="muted">/ The notebook</span></h2><span class="small muted">{{ site.posts.size }} {% if site.posts.size == 1 %}entry{% else %}entries{% endif %}</span></div>
+  <div class="writing-tools" hidden data-filter-tools>
+    <div class="filters" role="group" aria-label="Filter posts by category">
+      <button type="button" class="filter active" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" class="filter" data-filter="Notes" aria-pressed="false">Computer Science</button>
+      <button type="button" class="filter" data-filter="Solutions" aria-pressed="false">Problem Solving</button>
+      <button type="button" class="filter" data-filter="Reflections" aria-pressed="false">Reflections</button>
+    </div>
+    <label class="search"><span class="sr-only">Search post titles, summaries, and tags</span><span aria-hidden="true">⌕</span><input type="search" placeholder="Search posts…" data-search></label>
+  </div>
+  <div class="post-list">
+    {% for post in site.posts %}
+    <article class="post-item" data-post data-category="{{ post.category | escape }}" data-search-text="{{ post.title | escape }} {{ post.description | escape }} {{ post.tags | join: ' ' | escape }}">
+      <div class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%Y.%m.%d' }}</time><span class="category">{{ post.category | default: 'Notes' | escape }}</span></div>
+      <div class="post-summary"><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}<span class="post-arrow" aria-hidden="true">↗</span></a></h3><p>{{ post.description | default: post.excerpt | strip_html | truncate: 140 | escape }}</p><div class="tags">{% for tag in post.tags %}<span># {{ tag | escape }}</span>{% endfor %}</div></div>
+    </article>
+    {% endfor %}
+  </div>
+  <p class="empty-state" hidden data-empty role="status">No posts found. Try another search or browse all posts.</p>
+  <p class="list-note">One thought at a time.<span aria-hidden="true">✳</span></p>
+</section>

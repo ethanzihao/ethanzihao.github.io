@@ -1,0 +1,17 @@
+---
+layout: page
+title: Archive
+eyebrow: THE ARCHIVE
+nav: archive
+permalink: /archive/
+---
+<p class="archive-intro">A record of thoughts along the way. {{ site.posts.size }} {% if site.posts.size == 1 %}post{% else %}posts{% endif %} in total.</p>
+{% assign years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+{% for year in years %}
+<section class="archive-year" aria-labelledby="year-{{ year.name }}">
+  <h2 id="year-{{ year.name }}">{{ year.name }} <span class="small muted">/ {{ year.items.size }} {% if year.items.size == 1 %}post{% else %}posts{% endif %}</span></h2>
+  <ul class="archive-list">
+    {% for post in year.items %}<li><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%m.%d' }}</time><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a><span class="category">{{ post.category | escape }}</span></li>{% endfor %}
+  </ul>
+</section>
+{% endfor %}

@@ -6,9 +6,7 @@ nav: about
 permalink: /about/
 ---
 I’m **Ethan Tang**, also known as **Sherlock**.
-
 A freshman at CSE, CUHKsz. 
-
 This is my personal blog: a place to document what I learn about computer science and reflect on everyday life.
 
 ## What I write about
@@ -21,14 +19,11 @@ I write to think more clearly, and share to start conversations.
 
 ## Contact
 E-mail: zihaotang1@link.cuhk.edu.cn
-
 GitHub: [Ethan Tang](https://github.com/ethanzihao)
 
 ## Find More
 Zihu: [Sherlock](https://www.zhihu.com/people/sherlock-41-52-28)
-
-## Play Genshin Impact with Me
-UID: 1821905271
+Genshin Impact UID: 1821905271
 
 ---
 

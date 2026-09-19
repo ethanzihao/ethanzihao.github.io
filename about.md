@@ -19,6 +19,7 @@ I write to think more clearly, and share to start conversations.
 
 ## Contact
 E-mail: zihaotang1@link.cuhk.edu.cn
+WeChat: tzh18167309297
 
 ## Find More
 Zihu: [Sherlock](https://www.zhihu.com/people/sherlock-41-52-28)

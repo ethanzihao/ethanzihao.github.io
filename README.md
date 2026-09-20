@@ -1,3 +1,5 @@
 # Ethan Tang · Personal Blog
 
-**Welcome**
+## 关注喵
+
+## 谢谢喵

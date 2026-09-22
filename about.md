@@ -7,7 +7,7 @@ permalink: /about/
 ---
 I’m **Ethan Tang**, also known as **Sherlock**.
 
-A freshman at CSE, CUHKsz. 
+A freshman at CSE, CUHKsz.  
 
 This is my personal blog: a place to document what I learn about computer science and reflect on everyday life.
 

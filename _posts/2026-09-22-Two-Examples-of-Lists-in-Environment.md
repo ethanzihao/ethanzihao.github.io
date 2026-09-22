@@ -8,7 +8,7 @@ description: Lists in environment diagram
 lang: en
 ---
 
-# A list can be a mutable data as an entry of list
+# A list can be a mutable data as an entry of lists
 
 ```python
 >>> s = [1, 2]

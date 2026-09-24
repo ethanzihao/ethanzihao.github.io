@@ -144,9 +144,11 @@ main {
 }
 
 .intro {
-  position:relative;
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(0,320px);
+  align-items:center;
+  gap:48px;
   padding:76px 0 62px;
-  overflow:hidden;
 }
 
 .eyebrow {
@@ -204,16 +206,12 @@ main {
   z-index:1;
 }
 
-.intro-decoration {
-  position:absolute;
-  right:5px;
-  top:116px;
-  font-family:Georgia,serif;
-  font-size:102px;
-  letter-spacing:12px;
-  color:#d9e9f7;
-  transform:rotate(-8deg);
-  user-select:none;
+.intro-artwork {
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:6px;
+  box-shadow:0 12px 30px rgba(41,52,64,.12);
 }
 
 .writing-section {
@@ -747,13 +745,13 @@ main {
     padding-left:18px!important;
   }
   .intro {
+    grid-template-columns:1fr;
+    gap:32px;
     padding:54px 0 46px;
   }
-  .intro-decoration {
-    font-size:70px;
-    right:0;
-    top:50px;
-    opacity:.5;
+  .intro-artwork {
+    max-width:340px;
+    justify-self:center;
   }
   .intro-copy {
     font-size:13px;

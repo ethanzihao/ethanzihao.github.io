@@ -144,9 +144,10 @@ main {
 }
 
 .intro {
-  position:relative;
-  padding:76px 0 62px;
-  overflow:hidden;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  align-items:center;
+  padding:48px 0;
 }
 
 .eyebrow {
@@ -204,16 +205,15 @@ main {
   z-index:1;
 }
 
-.intro-decoration {
-  position:absolute;
-  right:5px;
-  top:116px;
-  font-family:Georgia,serif;
-  font-size:102px;
-  letter-spacing:12px;
-  color:#d9e9f7;
-  transform:rotate(-8deg);
-  user-select:none;
+.intro-content {
+  min-width:0;
+  padding-right:40px;
+}
+
+.intro-artwork {
+  display:block;
+  width:100%;
+  height:auto;
 }
 
 .writing-section {
@@ -725,10 +725,7 @@ main {
     max-width:1080px;
     padding:0 60px;
   }
-  .intro {
-    padding-top:86px;
-    padding-bottom:74px;
-  }
+
 }
 
 @media(max-width:700px) {
@@ -747,13 +744,12 @@ main {
     padding-left:18px!important;
   }
   .intro {
+    grid-template-columns:1fr;
+    gap:32px;
     padding:54px 0 46px;
   }
-  .intro-decoration {
-    font-size:70px;
-    right:0;
-    top:50px;
-    opacity:.5;
+  .intro-content {
+    padding-right:0;
   }
   .intro-copy {
     font-size:13px;

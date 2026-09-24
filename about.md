@@ -22,7 +22,6 @@ permalink: /about/
     <header class="profile-heading">
       <p class="eyebrow">ABOUT ME</p>
       <h1>Zihao (Ethan) Tang</h1>
-      <p class="profile-alias">Also known as Sherlock</p>
       <p class="profile-affiliation">Undergraduate student · CSE<br>The Chinese University of Hong Kong, Shenzhen</p>
     </header>
     <div class="prose profile-bio">

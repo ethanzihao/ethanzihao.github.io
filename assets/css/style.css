@@ -657,6 +657,117 @@ main {
   margin-bottom:12px;
 }
 
+.academic-profile {
+  display:grid;
+  grid-template-columns:220px minmax(0,1fr);
+  gap:64px;
+  padding:64px 0 20px;
+}
+
+.profile-portrait {
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:4px;
+}
+
+.profile-contact {
+  margin-top:25px;
+  font-size:12px;
+  overflow-wrap:anywhere;
+}
+
+.profile-contact h2 {
+  margin:0 0 10px;
+  font-size:14px;
+  font-weight:600;
+}
+
+.profile-contact a {
+  color:var(--green);
+  text-underline-offset:4px;
+}
+
+.profile-contact a:hover {
+  text-decoration:underline;
+}
+
+.profile-contact p {
+  margin:10px 0;
+}
+
+.profile-contact p span {
+  color:var(--muted);
+  margin-right:6px;
+}
+
+.profile-links {
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+  margin-top:16px;
+}
+
+.profile-heading {
+  padding-bottom:26px;
+  border-bottom:1px solid var(--line);
+}
+
+.profile-heading .eyebrow {
+  margin-bottom:10px;
+}
+
+.profile-heading h1 {
+  font-family:var(--serif);
+  font-size:clamp(34px,4vw,44px);
+  font-weight:500;
+  line-height:1.2;
+  margin:0 0 10px;
+}
+
+.profile-alias {
+  color:var(--muted);
+  font-size:14px;
+  margin:0;
+}
+
+.profile-affiliation {
+  font-size:14px;
+  margin:20px 0 0;
+}
+
+.profile-bio h2 {
+  font-family:var(--serif);
+  font-size:22px;
+  font-weight:500;
+  margin-top:28px;
+}
+
+.profile-bio p {
+  margin:12px 0;
+}
+
+.profile-personal p {
+  color:var(--muted);
+  font-size:14px;
+}
+
+.profile-uid {
+  white-space:nowrap;
+}
+
+.profile-bio .profile-notes {
+  border-top:1px solid var(--line);
+  margin-top:28px;
+  padding-top:20px;
+  font-size:12px;
+}
+
+.profile-notes span {
+  margin:0 8px;
+  color:var(--muted);
+}
+
 .archive-intro {
   color:var(--muted);
 }
@@ -729,6 +840,18 @@ main {
 }
 
 @media(max-width:700px) {
+  .academic-profile {
+    grid-template-columns:1fr;
+    gap:32px;
+    padding-top:36px;
+  }
+  .profile-portrait {
+    width:180px;
+    max-width:100%;
+  }
+  .profile-contact {
+    margin-top:20px;
+  }
   .site-shell {
     padding:0 24px;
   }

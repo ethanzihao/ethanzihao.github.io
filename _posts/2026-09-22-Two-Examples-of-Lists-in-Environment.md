@@ -1,4 +1,3 @@
-
 ---
 title: Two examples of lists in environment diagram
 date: 2026-09-22 16:00:00 +0800

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: About me
-description: Ethan Tang, a first-year CSE student at The Chinese University of Hong Kong, Shenzhen.
+description: Ethan Tang, a CSE student at The Chinese University of Hong Kong, Shenzhen.
 nav: about
 permalink: /about/
 ---
@@ -21,7 +21,7 @@ permalink: /about/
   <div class="profile-main">
     <header class="profile-heading">
       <p class="eyebrow">ABOUT ME</p>
-      <h1>Ethan Tang</h1>
+      <h1>Zihao (Ethan) Tang</h1>
       <p class="profile-alias">Also known as Sherlock</p>
       <p class="profile-affiliation">Undergraduate student · CSE<br>The Chinese University of Hong Kong, Shenzhen</p>
     </header>
@@ -29,11 +29,10 @@ permalink: /about/
       <section aria-labelledby="biography-heading">
         <h2 id="biography-heading">Biography</h2>
         <p>I’m a first-year student in CSE at The Chinese University of Hong Kong, Shenzhen. This website is a record of my learning in computer science and my reflections on everyday life.</p>
-        <p>I write to think more clearly, and share to start conversations.</p>
       </section>
       <section aria-labelledby="education-heading">
         <h2 id="education-heading">Education</h2>
-        <p><strong>The Chinese University of Hong Kong, Shenzhen</strong><br>Computer Science and Engineering · First-year undergraduate</p>
+        <p><strong>The Chinese University of Hong Kong, Shenzhen</strong><br>Computer Science and Engineering undergraduate</p>
       </section>
       <section class="profile-personal" aria-labelledby="personal-heading">
         <h2 id="personal-heading">Beyond academics</h2>

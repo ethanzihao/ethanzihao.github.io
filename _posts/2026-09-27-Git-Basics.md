@@ -109,5 +109,3 @@ Consider
 
 1. Commits on remote main must be your father commit. 
 2. If being rejected, you should `fetch` first, then `merge` . 
-# GitHub Basics
-

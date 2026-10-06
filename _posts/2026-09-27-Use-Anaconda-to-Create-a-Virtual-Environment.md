@@ -1,5 +1,5 @@
 ---
-title: Use Anaconda to Create a Virtual Environment
+title: Use Conda to Create a Virtual Environment
 date: 2026-10-06 12:24:00 +0800
 category: Notes
 tags: [anaconda, conda, virtual environment]

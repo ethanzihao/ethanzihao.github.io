@@ -32,3 +32,28 @@ This is a question about how to use recursion without calling the origin functio
 	1. A: `f` is a parameter when you define the function. But when you pass itself( a function)in, `f` has been already bound to a function, which is itself. 
 2. Q: Why `f(f)` ? We assume `f` plays the same role of the recursion function, isn't it? 
 	1. A: Function `f` is a lambda function. So whenever you call it, you should pass its parameter, which is itself.
+# Logic Steps
+
+```python
+return lambda x: 1 if x == 1 else f(x-1) * x
+```
+I want `f` to be the function `lambda x` itself, but `f` has not been defined yet.  
+So I will bind `f` to the `lambda x` itself. In other words, pass `lambda x` to a parameter `f` so that `f` will be `lambda x: ...` . 
+```python
+return (lambda f: lambda x: 1 if x == 1 else f(x-1) * x)(lambda x: 1 if x == 1 else f(x-1) * x)
+```
+However, in right hand side, `f` has not been defined yet, so this is not the final solution.  
+But if I said 'Hey python, you just regard `f` as a parameter first. ' Then, 
+```python
+return (lambda f: lambda x: 1 if x == 1 else f(x-1) * x)(lambda f: lambda x: 1 if x == 1 else f(x-1) * x)
+```
+However, now parameter `f` is bound to a lambda function which takes in an argument `f` , so `f(x-1)` is no more correct, instead, `f(f)(x-1)` .   
+And the right hand side should be exactly the same as left hand side. 
+```python
+return (lambda f: lambda x: 1 if x == 1 else f(f)(x-1) * x)(lambda f: lambda x: 1 if x == 1 else f(f)(x-1) * x)
+```
+Finally, pass the last argument `n` , and we are done. 
+```python
+def factorial(n):
+	return return (lambda f: lambda x: 1 if x == 1 else f(f)(x-1) * x)(lambda f: lambda x: 1 if x == 1 else f(f)(x-1) * x)(n)
+```
